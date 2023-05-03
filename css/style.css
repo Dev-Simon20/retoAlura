@@ -1,0 +1,218 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #E9ECF8;
+
+}
+
+header{
+
+    height: 80px;
+    margin-bottom: 30px;
+}
+h1{
+    padding-top: 20px;
+    text-align: left;
+    box-sizing: border-box;
+
+}
+
+.contenedor{
+    width:90%;
+    margin: 0 auto;
+  
+
+}
+.entradaDatos, .salidaDatos{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+}
+.entradaDatos{
+    width: 68%;
+    background-color: #E9ECF8;
+}
+.salidaDatos{
+    width: 25%;
+
+}
+
+.encerrar{
+    width: 90%;
+    margin-left: 9%;
+}
+
+.encerrar>p{
+    font-size: 10px;
+}
+.datos{
+    width:100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    padding-top:40px;
+    padding-left: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    font-size: 25px;
+    background-color: #E9ECF8;
+    text-align: justify;
+
+}
+.datos::placeholder{
+    color: rgba(10, 56, 113, 1);
+}
+.botones{
+    text-align: center;
+}
+.botones>button{
+
+    margin: 30px 5% 0 5%;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    transition: 400ms;
+ }
+ .botones>button:hover{
+    scale: 1.1;
+    transition: 400ms;
+ }
+
+ .encriptar{
+    border: none;
+    background-color:rgba(10, 56, 113, 1);
+    color: white;
+ }
+
+ .desencriptar{
+    border: 1px solid rgba(10, 56, 113, 1);
+    background-color:#c5c5c5;
+    color:rgba(10, 56, 113, 1);
+ }
+ .intercambiar{
+    border: 1px solid rgba(10, 56, 113, 1);
+    background-color:#c5c5c5;
+    color:rgba(10, 56, 113, 1);
+ }
+
+.outpod{
+    width:100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 490px;
+    min-height: 490px;
+    padding-top:20px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    transition: 400ms;
+    color: black;
+    text-align: justify;
+}
+
+.outpod::placeholder{
+    background-image: url(/Imagenes/Muñeco.png);
+     background-repeat: no-repeat;
+     padding-top: 115%;
+     text-align: center;
+     font-size: 18px;
+}
+.outpod::first-line{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.salidaDatos{
+    width: 25%;
+}
+
+#copiar{
+    
+    margin-left:25%;
+    border: 1px solid rgba(10, 56, 113, 1);
+    background-color:#c5c5c5;
+    color:rgba(10, 56, 113, 1);
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    transition: 400ms;
+}
+#copiar:hover{
+    scale: 1.05;
+    transition: 400ms;
+}
+/*  Para moviles*/
+
+@media screen and (max-width:780px) {
+
+    h1{
+        text-align: center;
+    }
+    .entradaDatos, .salidaDatos{
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+
+    }
+    .encerrar{
+        width: auto;
+        margin-left: 0;
+    }
+    .botones>button{
+        margin: 10px 3% 0 3%;
+        width: 26%;
+        height: 50px;
+        border-radius: 10px;
+        outline: none;
+        transition: 400ms;
+
+     }
+     .datos, .outpod{
+        max-height: 350px;
+        min-height: 350px;
+     }
+     .outpod{
+        border-radius: 40px;
+     }
+     .outpod::placeholder{
+        padding-top: 20%;
+        background-image: url();
+     }
+}
+
+/*Para Tabletas*/
+
+@media screen and (max-width: 1000px) and (min-width:780px ) {
+
+  .entradaDatos{
+    width: 50%;
+   }
+   .salidaDatos{
+    width: 45%;
+   }
+   .outpod::placeholder{
+       padding-top: 95%;
+   }
+
+
+}
+@media screen and (max-width: 1200px) and (min-width:1000px ) {
+
+    .entradaDatos{
+     width: 55%;
+    }
+    .salidaDatos{
+     width: 40%;
+    }
+    .outpod::placeholder{
+        padding-top: 85%;
+    }
+ 
+ 
+ }
